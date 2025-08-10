@@ -44,8 +44,7 @@ input::placeholder {
   color: #4dbacb;
   text-decoration: underline;
   z-index: 10;
-  /* يخليه فوق */
-
+ 
 }
 
 
@@ -66,15 +65,15 @@ ul {
   padding: 0;
   width: 800px;
   height: 130px;
-  margin-top: 50px;
-  margin: 50px auto auto auto;
-
+  
+  margin: 50px auto 100px auto;
+ 
 
 }
 
 
 
-ul .card {
+ .card {
   position: relative;
   margin-bottom: 10px;
   background-color: rgb(255, 255, 255);
@@ -83,16 +82,36 @@ ul .card {
   height: 130px;
   display: flex;
   align-items: center;
+margin-bottom: 20px;
+ 
 
-  margin-top: 20px;
+}
 
-
+.buttonDeleteItem {
+  position: absolute;
+  width:  60px;
+  height: 130px;
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border: none;
+  border-radius:   15px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  right: -70px;
+ 
 }
 
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-left: 5px solid #2e7681;
+  
+  
 }
+/* .card:hover .buttonDeleteItem {
+  display: block;
+} */
 
 
 .card img {
@@ -115,6 +134,10 @@ ul .card {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
+
+
+ 
+
 
 
 .NameCompany {
@@ -221,6 +244,7 @@ ul .card {
 
 
 .ItemSkill {
+  position: relative;
   font-size: 10px;
   color: #2f8f9e;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -234,11 +258,11 @@ ul .card {
 
 
 .imgselecte{
-   width: 60px;
+  width: 60px;
   height: 60px;
   border-radius: 50%;
   border-style: dotted;
-  padding: 30px;
+   padding:  20px;
     
     
    
@@ -249,7 +273,7 @@ ul .card {
 .cardform {
   position: relative;
   width: 800px;
-  height: 1450px;
+  height: 1100px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   display: flex;
@@ -364,31 +388,29 @@ ul .card {
 }
 
 
-.flexboxSkills{
-  position: relative;
-  display: flex;
+.gridSkills{
+   display: grid;
+  grid-template-columns: auto auto auto auto;
+    border-color: #010708;
   flex-direction: column;
-  border-color: #010708;
   width: 500px;
   height: 100px;
   border: 1px solid #010708;
-  border-radius: 10px;
+  align-items: first baseline;
+   border-radius: 10px;
   margin-left: 10px;
-   gap: 5px;
-   
- 
+     
  }
- .flexboxSkills .flexboxSkills-item {
-  position: relative;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  width: 600px;
-  height: 30px;
+  
+.FlexRowItemSkill {
+    width: 20px;
+  color: #2f8f9e;
+   font-size: 16px;
+   align-items: center;
+   display: flex;
+  
    
-   
-   }
-
+}
 
    .buttonDelete {
   position: relative;
